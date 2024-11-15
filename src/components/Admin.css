@@ -1,0 +1,12 @@
+.loginPage{
+    /* border:2px solid black; */
+    height : 100vh;
+}
+.loginForm{
+    /* border:2px solid red !important; */
+}
+.form-control:focus{
+    box-shadow: none;
+}
+
+

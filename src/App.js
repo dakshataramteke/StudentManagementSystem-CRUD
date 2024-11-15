@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Admin from './components/Admin.js';
+import Dashboard from './components/Dashboard.js';
+import Home from './components/Home.jsx';
+import AddStudent from './components/AddStudent.jsx';
+// import MultipleFile from './components/MultipleFile.jsx';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App" style={{backgroundColor:'pink'}}>
+      <BrowserRouter future={{ v7_relativeSplatPath: true ,  v7_startTransition: true }}>
+        <Routes>
+        <Route path="/" element={<Home />} />
+          <Route path="/admin" element={<Admin />} />
+          <Route path="/admin/dashboard" element={<Dashboard />}>
+          
+            <Route path="addStudent" element={<AddStudent/>} />
+            {/* <Route path="addStudent" element={<MultipleFile/>} /> */}
+          </Route>
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
