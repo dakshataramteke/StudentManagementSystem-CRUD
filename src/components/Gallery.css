@@ -1,0 +1,9 @@
+.Gallery_image {
+    width: 100%; /* Make images responsive */
+    height: 100%; /* Fill the height of the parent */
+    object-fit: cover; /* Maintain aspect ratio and cover the area */
+}
+
+.row {
+    height: auto; /* Allow row to adjust based on content */
+}

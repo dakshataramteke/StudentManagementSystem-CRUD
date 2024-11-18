@@ -3,7 +3,7 @@
     height : 100vh;
 }
 .loginForm{
-    /* border:2px solid red !important; */
+    border:2px solid black !important;
 }
 .form-control:focus{
     box-shadow: none;
